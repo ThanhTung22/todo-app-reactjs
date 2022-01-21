@@ -1,101 +1,19 @@
-body {
-  width: 100%;
-  height: 100%;
-  animation: changeBg 10s linear infinite;
-  display: grid;
-  place-items: center;
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #7e40f6;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(126, 64, 246, 1), rgba(80, 139, 252, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(126, 64, 246, 1), rgba(80, 139, 252, 1))
 }
 
-@keyframes changeBg {
-  0% {
-    background-color: #9c27b0;
-  }
-  20% {
-    background-color: #009688;
-  }
-  40% {
-    background-color: #2196f3;
-  }
-  60% {
-    background-color: #ff5722;
-  }
-  80% {
-    background-color: yellowgreen;
-  }
-  100% {
-    background-color: #9c27b0;
-  }
+.mask-custom {
+  background: rgba(24, 24, 16, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
-
-.todolist {
-  background-color: #fff;
-  margin: 0;
-  border-radius: 20px;
-  padding: 40px;
-  box-sizing: border-box;
-  box-shadow: 14px 14px 20px #803737;
-  width: 750px;
-  margin: 30px auto;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  position: relative;
-}
-
-.todolist h1 {
-  margin: 0;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.list-group-flush > .list-group-item {
-  padding: 8px 0px;
-}
-
-.todo-footer {
-  border-top: 1px solid #ddd;
-  background-color: #f4fce8;
-  margin: 0 -20px -10px -20px;
-  padding: 10px 20px;
-}
-
-.mark-all-done {
-  margin-top: 10px;
-}
-
-.form-control {
-  border-radius: 0;
-}
-
-.add-todo {
-  margin: 10px 0px;
-}
-
-.filters {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.filters li {
-  display: inline-block;
-}
-
-.filters li a {
-  cursor: pointer;
-  color: inherit;
-  margin: 3px;
-  padding: 3px 7px;
-  text-decoration: none;
-  border: 1px solid transparent;
-  border-radius: 3px;
-}
-
-.filters li a.selected,
-.filters li a:hover {
-  border-color: rgba(175, 47, 47, 0.1);
-}
-
-.filters li a.selected {
-  border-color: rgba(175, 47, 47, 0.2);
-}
-
